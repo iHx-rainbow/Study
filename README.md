@@ -11,8 +11,9 @@ Is that what's stopping you right now?
 Don't have enough money?  
 Is that the thing?  
 Or is the thing that's stopping you?  
-you?  
-Excuses sound best  
+you?_  
+
+_Excuses sound best  
 to the person who's making them up.  
 Stop felling sorry for youself.  
 Get off the pity ppotty  
@@ -38,8 +39,9 @@ You got a problem with your life?
 You got a problem with your enviroment?  
 Do some thing about it.
 If you want it  
-go get it.  
-Recognise  
+go get it._  
+
+_Recognise  
 the excuses are not  
 valid.  
 Thry're conjured up  
@@ -54,23 +56,27 @@ you have the knowledge
 and the support  
 and the willpower  
 and the discipline  
-to get it done.  
-The fruit of everything good in life  
+to get it done._  
+
+_The fruit of everything good in life  
 begins with a challenge.  
 Everything is uphill that's worthwhile.  
 And it's not going to come to you  
 and it's not going to fall in yout lap  
 and it's not going to be something that, oh my gosh  
 it just was so simple  
-it's always going to be difficult.  
-If you want it, you gotta go get it.  
-This is yout chance.  
+it's always going to be difficult._  
+
+_If you want it, you gotta go get it._  
+
+_This is yout chance.  
 This is your shot.  
 This is your moment.  
 This is your time.  
 This is your place.  
-This is your opportunity.  
-This is my time  
+This is your opportunity._  
+
+_This is my time  
 this is my moment
 tomorrow, tomorrow, tomorrow  
 ain't no such thing as tomorrow  
@@ -79,8 +85,9 @@ It's your dream
 if you're going to have it  
 get your butt up and make it happen  
 if you're going to have it  
-rise and grind.  
-You still got work to do  
+rise and grind._  
+
+_You still got work to do  
 stay on that basketball court  
 stay on that football field  
 it's grind season homie._
