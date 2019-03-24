@@ -12,6 +12,13 @@
  |_| |_|  |_| /_/\_\
 ```
 
+_Always give maximum effort, don't give yourself the excuse that you're "Saving your energy for the real thing."  
+Listen to what Special Forces Lieutenant Colonel Mike Kenny has to say on this:  
+"In Army parlance they say, 'train like you fight.' Don't screw around and say, "O.K., when it's for real then we'll really ramp up." No, you need to do that now. You need to train as hard and as realistic as possible, because this notion that when it's for real and the stakes are high, that's when we'll really turn it on and rise to the occasion... that's not what happens. You will not rise to the occasion. You will sink to the lowest level of your training. It's the truth.”  
+We tend to say to ourselves: I'm just preparing, I shouldn't give it my best. I know I can do better when the stake are high. I don't have to try too hard while I'm in school, but when I own a startup I know I'll work harder.  
+In reality, you're just cultivating a habit of making excuses and not putting forth 100% effort.  
+If you cultivate the idea of just getting by, then when the stakes are high you will be used to giving just 20% effort, and it will be useless to tell yourself "I need to change completely, right now."_
+
 ### 2019.03.23
 _Are you too tired?  
 Didn't get enough sleep?  
