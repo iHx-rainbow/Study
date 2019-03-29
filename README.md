@@ -2,6 +2,26 @@
 
 ## Love Hx.
 
+### 2019.03.29 
+
+[^_^]: <> (This is a comment, it will not be included)
+[^_^]
+
+```c
+//C语言判断字符相等
+c1==c2
+//C语言strcmp函数判断字符串相等
+#include <string.h>
+char str_1[] = "abc"; 
+char str_2[] = "abc";
+if (strcmp(str_1, str_2) == 0)
+printf("str_1 is equal to str_2. \n");
+//也可以忽略大小写来比较，使用函数stricmp中间的i意思是ignore case sensitive
+//还可以指定长度比较，strncmp，如：
+char str_1[]="abc",str_2[]="abcdefg";
+if(strncmp(s1,s2,3)==0) printf("first 3 characters are same");
+```
+
 ### 2019.03.28
 线性回归调参
 
@@ -11,11 +31,9 @@
 1000项7.485  
 
 ### 2019.03.26
-以为自己是个难以接近的人吧，想要改变一下说话方式。  
-傻乎乎一点，话多一点，幼稚也好，挨骂也好。  
-现在发现好像，你并不喜欢。  
-Though  
-那还是原来那样吧。
+[(´ . .̫ . `)]: <> (以为自己是个难以接近的人吧，想要改变一下说话方式。傻乎乎一点，话多一点，幼稚也好，挨骂也好。现在发现好像，你并不喜欢。Though，那还是原来那样吧。)
+[(´ . .̫ . `)]
+
 
 ### 2019.03.25
 [微积分的本质](https://www.bilibili.com/video/av24325548)
