@@ -4,7 +4,7 @@
 
 ### 2019.03.29 
 
-[comment]: <> (This is a comment, it will not be included)
+[comment]: # (This is a comment, it will not be included)
 
 return、break和continue  
 这三个关键字有一个共同点，那就是读能让后面的语句不执行，不同的地方就是挑的距离不一样。
