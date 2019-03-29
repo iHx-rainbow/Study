@@ -4,8 +4,7 @@
 
 ### 2019.03.29 
 
-[^_^]: <> (This is a comment, it will not be included)
-[^_^]
+[comment]: <> (This is a comment, it will not be included)
 
 ```c
 //C语言判断字符相等
