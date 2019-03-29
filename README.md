@@ -7,6 +7,9 @@
 [comment]: <> (This is a comment, it will not be included)
 
 ```c
+//C语言获取输入字符串两种方法
+scanf("%s",str);    //空格不会被读取
+gets(str);          //空格也会被读取，以换行为结束
 //C语言判断字符相等
 c1==c2
 //C语言strcmp函数判断字符串相等
