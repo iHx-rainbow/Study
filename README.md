@@ -2,7 +2,48 @@
 
 ## Love Hx.
 
+### 2019.04.03
+__SQL__  
+where和having的不同：where是对原始数据进行筛选，having是对分组时候的数据进行筛选  
+
+查询关键字家族成员
+```sql
+select top/distinct 字段列表
+from 表列表 where 筛选条件
+group by 分组字段列表
+having 对分组之后得到的结果集筛选
+order by 排序字段列表
+```
+执行顺序：  
+1.from  
+2.where  
+3.group by  
+4.having  
+5.根据select关键之后的要显示的字段，进行结果集显示  
+6.order by对最终结果集进行排序  
+7.top/dictinct
+
+__Python__  
+VS code默认Python调试目录在${workspaceFolder}，因此需要打开同目录下文件需要使用相对路径。  
+Jupyter Notebook则是默认以文件同目录调试  
+
+写相对路径时报错：EOL while scanning string literal  
+扫描字符串文字时报错
+在写文件时一定要小心 \\ ，因为这个字符可以和多个字符表示不同的意思，比如'\b','\u','\t','\n'而这里出错的原因就是因为和后面的 ' 混合在一起了。  
+
+解决办法：
+```python
+path=r"Python程序设计\实验二"
+fo = open(path+r"\Text.txt", "r")
+```
+或者
+```python
+path=r"Python程序设计\实验二\\"
+fo = open(path+"Text.txt", "r")
+```
+
 ### 2019.04.02
+restart  
 重新开始早起
 
 ### 2019.04.01
