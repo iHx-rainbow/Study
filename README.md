@@ -29,13 +29,13 @@ having 对分组之后得到的结果集筛选
 order by 排序字段列表
 ```
 执行顺序：  
-1.from  
-2.where  
-3.group by  
-4.having  
-5.根据select关键之后的要显示的字段，进行结果集显示  
-6.order by对最终结果集进行排序  
-7.top/dictinct
+>1.from  
+>2.where  
+>3.group by  
+>4.having  
+>5.根据select关键之后的要显示的字段，进行结果集显示  
+>6.order by对最终结果集进行排序  
+>7.top/dictinct
 
 __Python__  
 VS code默认Python调试目录在${workspaceFolder}，因此需要打开同目录下文件需要使用相对路径。  
