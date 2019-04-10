@@ -2,6 +2,39 @@
 
 ## Love Hx.
 
+### 2019.04.10
+__T-SQL触发器__  
+For触发器与after触发器是一个作用，所以触发器分为AFTER触发器，与Instead of触发器。  
+after触发器是在操作成功后，所采取的一些动作。  
+而对于instead of触发器，真正起作用的是触发器里面的动作。  
+```sql
+create trigger trigger_name
+on { table_name|view_name }
+{ for|After|Instead of }
+[ insert,update,delete ]
+as
+begin
+    sql_statement
+    rollback transaction --回滚，阻止触发触发器的操作执行
+end
+```
+SQL Server为每个触发器都创建了两个专用表：Inserted表和Deleted表。  
+这两个表由系统来维护，它们存在于内存中而不是在数据库中。这两个表的结构总是与被该触发器作用的表的结构相同。触发器执行完成后，与该触发器相关的这两个表也被删除。  
+Deleted表存放由于执行Delete或Update语句，而要从表中删除的所有行。  
+Inserted表存放由于执行Insert或Update语句，而要向表中插入的所有行。  
+```sql
+DECLARE @title nchar(100)
+select @title = title from deleted
+delete FROM StarsIn where movieTitle = @title
+```
+在删除（delete）数据的时候，可以假定数据库将要删除的数据放到一个deleted临时表中，我们可以向读取普通的表一样，select 字段 from deleted  
+而插入（insert）的时候道理一样，只不过是把要插入的数据放在inserted表中。  
+更新（update）操作可以认为是执行了两个操作，先把那一行记录delete掉，然后再insert，这样update操作实际上就对deleted表和inserted表的操作，所以不会有updated表了。  
+有的时候两个表是主外键关系，想删除主表数据的同时把子表相关的数据也删除，这个时候如果用触发器就没有效果了，因为这个触发器是在你删除表后才触发的，这个时候直接终止，提示“有主外键关系，不能删除等”，所有这样的删除触发器是没有效果的。
+
+commit transcation：标志一个成功的隐性事务或显性事务的结束，提交事务并永久保存在数据库中。  
+rollback transcation：在事务中出错或用户决定取消事务，数据回滚到最初始状态。
+
 ### 2019.04.09
 标准化是按比例缩放，不改变原始数据的分布。
 归一化则是在压缩，对不同特征维度的伸缩变换的目的是使各个特征维度对目标函数的影响权重是一致的，容易受到极大值极小值的影响。  
