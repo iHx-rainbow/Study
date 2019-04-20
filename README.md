@@ -2,6 +2,21 @@
 
 ## Love Hx.
 
+### 2019.04.19
+GitHub中fork的代码库会有一个upstream分支  
+会显示原主人对代码库的更改，可以通过merge到master或其他分支来同步更新的代码  
+
+### 2019.04.19
+Python读取文本文件过程中发现一个问题：已有记事本文件（非空），转码 UTF-8，用open打开后，在开始位置会出现 `\ufeff` 导致后续处理出错  
+解决：修改打开文件编码方式，把 UTF-8 编码 改成 UTF-8-sig
+```python
+fo = open('test.txt', encoding='UTF-8-sig')
+linelist = []
+for line in fo:
+    linelist.append(line.strip())
+print(linelist)
+```
+
 ### 2019.04.18
 [JeeSite](https://jeesite.gitee.io/ '百度一下，你就知道')
  是一个 Java EE 企业级快速开发平台，基于经典技术组合（Spring Boot、Spring MVC、Apache Shiro、MyBatis、Beetl、Bootstrap、AdminLTE）在线代码生成工具。
