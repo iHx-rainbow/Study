@@ -2,6 +2,20 @@
 
 ## Love Hx.
 
+### 2019.04.21
+准备期中考试  
+eclipse安装阿里代码规范
+
+### 2019.04.20
+MySQL修改数据库存储路径  
+在C:\ProgramData\MySQL\MySQL Server 5.7文件夹  
+my.ini是默认的配置文件。在这里我们只更改数据存储路径。不更改配置文件  
+`# Path to the database root`  
+`datadir=C:/ProgramData/MySQL/MySQL Server 5.7/Data`  
+报错：Can't connect to MySQL server on 'localhost' (10061)  
+解决：自定义的文件夹需要在安全属性里面添加network service的访问权限，不然会触发10061（2003）的错误。  
+mysql在Windows下使用network service权限运行  
+
 ### 2019.04.19
 GitHub中fork的代码库会有一个upstream分支  
 会显示原主人对代码库的更改，可以通过merge到master或其他分支来同步更新的代码  
