@@ -2,6 +2,13 @@
 
 ## Love Hx.
 
+### 2019.04.24
+<https://github.com/openbilibili/go-common>  
+前排吃瓜 学习Golang
+
+### 2019.04.22-23
+期中考试
+
 ### 2019.04.21
 准备期中考试  
 eclipse安装阿里代码规范
@@ -377,7 +384,7 @@ Instrumental Version：伴奏版，纯背景音乐。
 
 >链接 [link]
 
-><http://example.com/>
+><http://example.com>
 
 #### 图片
 >![图片前面要写一个！](https://www.baidu.com/img/baidu_jgylogo3.gif)
