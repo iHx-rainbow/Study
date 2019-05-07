@@ -2,6 +2,41 @@
 
 ## Love Hx.
 
+### 2019.05.07
+```jsp
+<form:select path="deptId">
+<form:options items="${deptList}" itemLabel="name" 
+</form:select>
+```
+itemLabel：显示  
+itemValue：值  
+Eclipse全局搜索 ctrl+H
+
+### 2019.05.06
+JeeSite  
+引入不同service要用多个@Autowired
+
+### 2019.04.30-05.05
+劳动节放假
+
+### 2019.04.29
+JeeSite  
+.properties文件中文用Unicode编码
+
+### 2019.04.27-28
+🤭复联4  
+MCU：漫威电影宇宙
+
+### 2019.04.26
+删除Eclipse导入的epf主题的正确方式：破坏性最小的恢复方法  
+删除 workspace/.metadata/.plugins/org.eclipse.core.runtime/下的2个文件。  
+org.eclipse.ui.editors.prefs  
+org.eclipse.wst.css.ui.prefs  
+重启即可.
+
+### 2019.04.25
+刷机 BootLoader锁
+
 ### 2019.04.24
 <https://github.com/openbilibili/go-common>  
 前排吃瓜 学习Golang
