@@ -10,7 +10,10 @@
 ```
 itemLabel：显示  
 itemValue：值  
-Eclipse全局搜索 ctrl+H
+Eclipse全局搜索：ctrl+H  
+
+SQL server  
+如果缺少"dbo."就会提示"不是可以识别的内置函数名称"的错误，dbo是databaseobject的意思。
 
 ### 2019.05.06
 JeeSite  
