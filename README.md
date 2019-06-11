@@ -2,6 +2,10 @@
 
 ## Love Hx.
 
+### 2019.06.10
+eclipse快捷键：  
+alt+shift+W -> System Explorer 在资源管理器打开当前文件
+
 ### 2019.05.07
 ```jsp
 <form:select path="deptId">
