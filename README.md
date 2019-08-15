@@ -2,6 +2,80 @@
 
 ## Love Hx.
 
+
+### 2019.06.23
+JS阻止事件冒泡  
+e.stopPropagation();  
+
+HTML\<a>标签中href="javascript:;"  
+执行一段空白的javascript语句，返回空或者false值，从而防止链接跳转。跟当前a标签无关，这段代码始终都会执行。  
+类似于href="#"  
+
+
+### 2019.06.21
+```js
+　　1）使用ajax之前先引入jquery
+
+　　<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+
+二，ajax常用格式
+　　　　var u = $("#uUsername").val();
+
+　　1）  $.ajax({
+
+　　　　url : 'user/checkUname', 　   <!-- url  :请求地址 -->  
+　　　　type : 'post',　　　　　　　　<!--type ：请求类型:post/get --> 
+　　　　data : {　　　　　　　　　　　<!--data ：发送给服务器的数据 -->      
+　　　　　　　　uUsername : u,　　　　　　  <!-- 使用自己声明的对象 -->  
+　　　　　　　　uPwd : $("#pwd").val()　　　 <! -- 直接获取页面的对象 -->  
+　　　　　　},
+　　　　dataType : 'json',                    <!--dataType:服务器返回的数据类型 text/xml/script/html/json/jsonp -->
+　　　　success: function(data){　　　<!--回调函数 -->        
+　　　　　　console.log(data);             <! -- 浏览器控制台显示返回内容（建议使用） -->
+　　　　　　alert(data);　　　　　　     <! -- 弹框显示返回内容 -->
+　　　　　　}
+
+　　　　});
+```
+
+### 2019.06.12
+#### Eclipse保存工作空间个人配置  
+下面XXX表示之前的工作空间，将下面文件夹内容在新的工作空间进行覆盖即可！  
+保存字体等配置：XXX\.metadata\.plugins\org.eclipse.core.runtime
+保存布局等配置：XXX\.metadata\.plugins\org.eclipse.e4.workbench
+
+#### Eclipse设置UTF-8编码
+1. 修改workspace编码  
+windows->preferences->gengral->workspace  
+在下面编码选择other->UTF-8应用。  
+2. 修改Content Types编码  
+windows->preferences->gengral->conten Types->Text(->JSP)  
+Default enconding–>UTF-8–>Update这样把里面所有的文件设置为UTF-8编码)  
+3. 修改web下文件的编码  
+windows->preferences->web->(css files、html files、javaServer face、jsp files)  
+在enconding设置为ISO 10646/Unicode(UTF-8)  
+4. 修改项目（文件）的编码  
+鼠标右键->preferences->Resource 找到文件的编码属性。  
+
+#### JavaEE SSH框架 jsp页面中提交修改中文出现???  
+db.properties文件中  
+连接字符串后加上 ?useUnicode=true&characterEncoding=UTF-8  
+jdbc.jdbcUrl=jdbc:mysql:///card?useUnicode=true&characterEncoding=UTF-8
+
+#### Python可变、不可变类型
+Python中，数值类型（int和float）、字符串str、元组tuple都是不可变类型。  
+而列表list、字典dict、集合set是可变类型。  
+
+#### 解决tomcat启动log中文乱码
+1、修改apache-tomcat-9.0.21/conf/conf/logging.properties  
+2、添加语句：java.util.logging.ConsoleHandler.encoding = GBK  
+3、重启tomcat，查看日志数据即可
+
+#### 一般开放原代码软件都会有两个版本发布：  
+Source Distribution 和 Binary Distribution   
+Source Distribution 是源代码版，你需要自己编译成可执行软件。  
+Binary Distribution 是可执行版，直接可以拿来用的，他已经给你编译好的版本  
+
 ### 2019.06.10
 eclipse快捷键：  
 alt+shift+W -> System Explorer 在资源管理器打开当前文件
