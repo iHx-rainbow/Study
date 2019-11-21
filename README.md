@@ -2,6 +2,54 @@
 
 ## Love Hx.
 
+### 2019.11.08
+#### Windows 10 安全中心删除历史记录  
+C:\ProgramData\Microsoft\Windows Defender\Scans\History 文件夹下删除文件  
+无法删除的话 命令行管理员模式运行
+```
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /d 1 /t REG_DWORD /f
+```
+然后重启后删除 并执行
+```
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /d 0 /t REG_DWORD /f
+```
+重启后即可
+
+#### Pandownload 扩展脚本下载地址
+http://pandownload.com/scripts/download.html
+
+### 2019.10.18
+
+#### Ubuntu ssh : connect to host localhost port 22:Connection refused
+
+造成这个错误的原因可能是ssh-server未安装或者未启动。ubuntu 11.10 默认安装openssh-client，但是没有安装server
+ 
+运行 ps -e | grep ssh，查看是否有sshd进程
+
+如果没有，说明server没启动，通过 
+`/etc/init.d/ssh start`或者`/etc/init.d/ssh restart` 启动server进程，如果提示ssh不存在 那么就是没安装server
+
+通过 sudo apt-get install openssh-server命令安装即可
+
+#### 安装sbt
+
+tar -zxvf sbt-1.1.4.tgz # 解压  
+cd /usr/software/sbt/ # 进入解压目录  
+vim sbt # 新建一个名字为sbt的文本，并在在文本中加入以下内容  
+```
+#!/bin/bash
+SBT_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
+java $SBT_OPTS -jar /usr/local/sbt/bin/sbt-launch.jar "$@"  # 注意对应路径
+```
+wq保存退出  
+chmod u+x ./sbt # 修改sbt脚本文件权限  
+sudo vim /etc/profile # 配置PATH环境变量  ~/.bashrc 也行  
+在文件最后添加：  
+export PATH=/usr/local/sbt/:$PATH  
+wq保存退出  
+source /etc/profile # 使配置文件立刻生效  
+
+
 ### 2019.09.22
 
 #### 临时邮箱，接受邮箱验证
