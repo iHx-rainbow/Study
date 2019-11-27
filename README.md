@@ -2,7 +2,28 @@
 
 ## Love Hx.
 
+### 2019.11.27
+
+#### 谷歌浏览器Software Reporter Tool长时间占用CPU解决办法  
+我们虽然可以通过任务管理器手动结束进程或者选择删除SRT，但这都不是长久的解决办法。因为前者过一段时间它又会再次运行，后者在浏览器更新的时候就又会重新被下载下来。要完美地解决这一个问题我们可以进入SRT目录，默认它位于以下目录
+
+`C:\Users\[YourName]\AppData\Local\Google\Chrome\User Data\SwReporter\[版本]`  
+我们还可以通过win+r键打开运行命令窗口并输入以下命令快速找到它   
+`%localappdata%\Google\Chrome\User Data\SwReporter`  
+执行以下步骤：
+- 右键单击software_reporter_tool.exe选择属性  
+转到“安全”选项卡  
+点击“高级”  
+点击“禁用继承”  
+选择"从此对象中删除所有继承的权限",之后点击“确定”  
+这样就没有人可以访问SwReporter文件夹并启动Software Reporter Tool了。 
+
+- 另一个方法是：修改配置文件  
+与上文相同的文件夹下，有个manifest.json文件，  
+用编辑器打开它，将 “allow-reporter-logs”: true 修改为 “allow-reporter-logs”: false
+
 ### 2019.11.08
+
 #### Windows 10 安全中心删除历史记录  
 C:\ProgramData\Microsoft\Windows Defender\Scans\History 文件夹下删除文件  
 无法删除的话 命令行管理员模式运行
