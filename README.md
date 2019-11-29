@@ -2,6 +2,20 @@
 
 ## Love Hx.
 
+### 2019.11.28
+
+修复Windows快速启动  
+命令提示符-以管理员身份运行  
+`powercfg -h off`   关闭休眠  
+`powercfg -h on`    开启休眠  
+
+注册表
+按下快捷键“win+R”调出运行命令行，输入`regedit`启动注册表编辑器，展开  
+`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager`  
+找到右侧的 BootExecute（作用好像是 开机硬盘自检）修改键值为autocheck autochk *
+
+修复失败，已关闭快速启动，并禁用休眠
+
 ### 2019.11.27
 
 #### 谷歌浏览器Software Reporter Tool长时间占用CPU解决办法  
