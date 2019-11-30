@@ -2,6 +2,16 @@
 
 ## Love Hx.
 
+### 2019.11.30
+
+VSCode插件Markdown PDF下载安装chromium失败解决方法  
+找到Preferences-Settings，在设置界面找到markdown-pdf的executable path配置项，点击edit in settings.json链接  
+在USER SETTINGS中配置chrome.exe文件的全路径，如
+```json
+"markdown-pdf.executablePath": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+```
+然后重启VSCode即可
+
 ### 2019.11.28
 
 修复Windows快速启动  
