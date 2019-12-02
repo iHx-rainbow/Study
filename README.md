@@ -2,6 +2,137 @@
 
 ## Love Hx.
 
+### 2019.12.01
+
+此篇整理了最完整的--Android逆向学习线路知识体系。希望给迷糊的入门者指出一个明确的方向。
+建议先正向开发几年再搞逆向吧……
+
+学习Android逆向之前，必备条件。【必备】
+从事3-5年真实的Android开发工作，能够跟踪了解最新Android开发技术；
+- 熟悉Android NDK开发和JNI技术，熟悉Log原理。有FrameWork开发经验；
+- 熟悉Android虚拟机机制，打包原理，熟练使用C/C++，Java，kotlin，dart等Android开发常用语言；
+- 了解ARM、Smali汇编语言，熟悉IPC原理，能够熟练搭建IPC框架；
+- 熟悉Android/Linux底层框架，熟悉系统的工作原理和细节；
+- 熟练使用Fiddler和Charles抓包工具进行抓包；
+- 熟悉Python基础语法，并能写简单的脚本和爬虫。
+
+第一阶段：  
+Android 基础知识回顾：
+- 回顾Android 开发编程，深入理解Android系统原理和层次结构，深入分析Handler源码和原理；
+- 回顾Java，C/C++，Kotlin 在Android开发中必用的语言，了解几种语言的混淆后的特性；
+- 回顾Android IPC和JNI的底层原理和热更新技术回顾Native开发要点，使用C++结合NDK完成Android Native开发；
+- 回顾Android开发中常用的 AMS、PMS、WMS原理；
+- 回顾Android开发中 Google的MVVM框架：DataBinding+LiveData+ViewModel；
+- 回顾Android开发中 Google的MVP框架：Dagger2；
+- 回顾Android开发网络架构：Okhttp3+RxJava2+Retrofit2+Rxdownload4+Rxcache+Glide；
+
+Android 逆向基础知识：
+- 熟悉Android逆向工具的使用，如apktool，IDA，dex2jar，JEB，Androidkiller，Androguard等；
+- 深入分析APK中包含的各文件格式，分析Android系统源码中解析APK的相关代码；学习和熟悉smali语言（重点）；
+- 仿微信写一个APP，并利用工具逆向出apk内的代码，并对比源码分析。
+
+
+入门知识总结和实战（逆向入门）：
+- 知识梳理，常用工具安装，adb命令与Linux常用命令，常见登录逻辑分析；
+- 分析ELF可执行程序，调式ELF可执行程序；ARM汇编与寄存器，ARM反汇编速成，ARM指令机器码，常用ARM指令集；
+- 反编译ELF文件与ObjDump，ELF文件解析与readelf，ELF文件解析与010Editor，深入分析ELF文件结构；IDA静态分析，IDA动态调式；
+- 简易计算器实现及分析（练习）；
+- 字符串加密与解密，冒泡排序算法分析；
+- 关键android_server文件检测，IDA调试端口检测；
+- ELF可执行程序加载so库，DEX解析与dexDump，DEX解析与010Editor；
+- 实现自己的Dex解析工具与GDA（练习）；
+- Androidkiller动态调试smali代码插件，AS+smalidea调式smali代码；
+- Log注入实现免注册，如何定位关键代码，去除java层签名验证，去除广告和弹窗（实战）；
+- 推荐阅读《AndroidXXXXXX……》随便找本系统源码讲解的书看看吧；
+
+Android 基础算法和安全协议：
+- 密码学，对称加密算法，非对称加密算法，散列函数；
+- 数字签名，数字证书，SSL证书检测，协议与安全协议；
+- 了解服务器端与客户端通信协议分析；
+- 使用Charles抓登录封包和验证码，协议构造与Java层MD5算法，动态调式smali代码与sign字段；
+- 协议构造类与SO层DESCBC算法，协议关键字段SIGN与SO层MD5算法，动态调试协议字段，动态调式协议关键字段SIGN；
+- 协议关键字段pwad和sign，动态调式协议字段拼接与MD5加密，分析so层OpenSSLSHA1算法；
+- 封包加密与反编译失败，使用方法跟踪分析加密；java层逆向分析，分析so层TEA算法；
+- 练习：抓取验证码和登录封包，分析协议关键字段与RSA算法，证书与RSA原理及源码分析；
+- 对称加密AES、PBE与CRC算法，数字签名RSA、DSA算法；
+
+第二阶段：  
+Android 逆向进阶学习：
+- Android 系统结构深入分析，自定义 ClassLoader，自定义注解和元注解原理分析；
+- 了解AndroidNDK，静态注册，动态注册，SO加载分析，
+- App保护策略去除霸哥磁力搜素APK签名验证，一键去除签名验证，静态代{过}{滤}理，动态代{过}{滤}理Hook Activity启动函数，
+- Hook签名验证函数介绍xposed框架：Xposed框架：
+- 绕过验证码注册Xposed框架：
+- 登陆劫持Xposed框架：
+- 篡改IMEI信息介绍CydiaSubstrate框架：
+- Java层Hook：
+- 篡改系统文字颜色Java层Hook：
+- 修改方法返回值绕过登录Java层Hook：
+- 篡改游戏金币Java层Hook：
+- 篡改主机名和端口号
+- Native层Hook：
+- ADBI框架：ELFARMHOOK框架内存抠取Dex文件过反调试技巧C++游戏
+- 逆向练习：动态调试2048纯算法游戏，Zygote+Hook使2048游戏秒过关；
+
+Android NDK与JNI全面剖析：
+- so动态库的介绍JNI动态注册和静态注册NDK Build 工具介绍
+- Cmake工具介绍JNI.h
+- 介绍Android 源码工具和技巧
+- ijkplayer 源码分析及原理讲解
+- AndFix 源码分析及原理讲解
+- Java调用so库的动态流程解析
+- NDK实现增量更新
+- 案例NDK实现换脸等工业级图像识别案例NDK文件实现拆分和加密处理
+
+Android 加固防护和脱壳简介：
+- DEX文件、ODEX文件与OAT文件；
+- XML文件与ARSC文件；
+- 分析App加固的产生及背景，最初加固方式，加固技术的发展；
+- HOOK制作脱壳机，定制自己的脱壳系统；
+- DexClassLoader动态加载分析，DEX自解析重构技术；
+- 三代梆梆加固原理分析；爱加密加固原理分析；
+- 360加固与脱壳机，360加固VM与置换表；
+- 辅助脱壳机，IDA动态调式脱爱加密壳；
+- IDA动态调式脱360壳，IDA动态调式脱SO壳；
+- 脱360壳-dex2oat，脱360壳-drizzleDumper；
+- 百度加固DD大法，百度加固VM与置换表；
+- 阿里加固与脱壳机，腾讯乐固；
+- ARSC资源保护与注解；
+- 脱壳神器ZjDroid：
+- 捕鱼达3加固技术总结；
+
+Android 脱壳与反脱壳分析：
+- Android脱壳中的思路，技巧elf结构详解：
+- 动态运行库so文件的文件组成结构elf结构详解：
+- 加载so文件的流程elf文件变形与保护，elf文件修复分析，so加壳文件修复常用调试检测方法与过检测方法
+- Android源码定制添加反反调试机制Android dvm 脱壳，Dalvik dex处理分析IDA脱壳脚本编写，Odex修复方法，
+- IDAOdex修复脚本编写
+
+进阶知识总结和企业级实战（逆向进阶）：
+- 病毒分析与脱壳学习，用Ransomware类和木马类进行学习；
+- 手动脱壳《王者X耀》练习；从0开始打造自己的破解代码库；
+
+第三阶段：  
+Android 漏洞分析和挖掘：
+- 学习常见的漏洞类型和原理。例如堆溢出，栈溢出，UAF等，可以参考漏洞分析相关书籍；
+- 关注Android Security Bulletin，根据提供的diff分析漏洞成因；
+- 学习并调试以前的经典漏洞；
+- 学习漏洞挖掘fuzzing思路，参考书籍推荐《Android安全XXXX》；
+- 病毒分析与病毒脱壳实战；
+
+Android 虚拟机技术、系统源码分析、刷机机制介绍、制作ROM刷机包：
+- ASP代码注入式写法；
+- Android 免root进行hook；
+- Android虚拟机原理，Android多开原理讲解；
+- 在apk内部写一个虚拟机，在apk内安装apk；
+- 虚拟机适配Android 10和64位系统；
+- 从0开始开发自己的虚拟机库；
+- 最完善的刷机工具 ：魔趣 ROM；
+- 最完善的刷机工具 ：Devices - TWRP；
+
+大型企业级项目练手（五个项目）：
+- 略……
+
 ### 2019.11.30
 
 VSCode插件Markdown PDF下载安装chromium失败解决方法  
