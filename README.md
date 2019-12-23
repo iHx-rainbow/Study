@@ -2,6 +2,22 @@
 
 ## Love Hx.
 
+### 2019.12.23
+
+#### 微信内测版
+
+[64 位机型](https://support.weixin.qq.com/cgi-bin/mmsupport-bin/readtemplate?t=page/android_exp__index&clientversion=&from=singlemessage&exportkey=AStDx7QpwGrkQXcMP7sO1dE%3D&pass_ticket=l%2FN5O2HtGzHeHemeg4%2FGRFGJVYT0mUHt5dcaziOzQ1LCj2vWZVdZC09rVXu96%2FNO&wechat_real_lang=zh_CN)
+
+[32 位机型](https://support.weixin.qq.com/cgi-bin/mmsupport-bin/readtemplate?t=page/android_exp__index&clientversion&from=singlemessage&exportkey=Adm2wfbrtg5qAAYoX4J%2Fd8Y%3D&pass_ticket=ZQ4U1OVdn5UR%2FbcrYiLBCNIcUK1cwkLQOGdDgAVtDKK1PPb%2BvBa2TPyKSrLC37GR&wechat_real_lang=zh_CN)
+
+#### 微信禁用X5浏览器内核
+
+1. 打开任意聊天窗口（建议文件传输助手）
+2. 发送链接 ​debugmm.qq.com/?forcex5=false​
+3. 点击刚刚发送的链接，此时微信国内版内置的 X5 浏览器内核将被强制禁用
+
+禁用 X5 内核后微信将调用系统 Webview 进行网页加载，而系统默认的 Webview 是完美适配暗色主题的。公众号文章页面没有暗色主题覆盖，也可以通过此方法解决。
+
 ### 2019.12.16
 
 #### 固态硬盘颗粒 SLC、MLC、TLC、QLC
