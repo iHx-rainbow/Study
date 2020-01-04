@@ -2,6 +2,14 @@
 
 ## Love Hx.
 
+### 2020.01.01
+
+https://infiniture.cn/2019/09/30/JavaScript%E5%B8%B8%E7%94%A8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F
+https://infiniture.cn/2019/09/30/JavaScript常用设计模式
+
+https://infiniture.cn/2019/09/29/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E5%87%BD%E6%95%B0
+https://infiniture.cn/2019/09/29/深入理解JavaScript函数
+
 ### 2019.12.29
 
 #### Anaconda换国内源
