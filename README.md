@@ -2,9 +2,40 @@
 
 ## Love Hx.
 
-1. 我使用的图片为该品牌官方旗舰店公开发布于互联网的商品信息购买页商品详情截图，而非使用了其商品推广专用图，且图中明确包含了其店铺及该品牌信息以及出处，且其商品详情页并未标注不允许转载或分享反而主动提供截图分享按钮。故不构成侵权，申请驳回其侵权投诉。
-2. 本人已经购买该品牌商品，凭证附图，因此咸鱼发布的信息是商品使用权的转让，而非利用其品牌及图片信息进行销售行为，故不存在不正当利用其权利进行牟利行为，申请驳回其侵权投诉。
-3. 该品牌官方旗舰店商品详情中使用的商标标注为™标而非®标，举证附图，“TM”是商标标识，“R”是注册商标标识，二者受法律保护的力度是不同的。 在商标还未成为注册商标的时候，标注“TM”标记，并不享有专用权。因此并不构成侵权行为，申请驳回其侵权投诉。
+### 2020.01.07
+
+跳龙门 群发 群聊互怼
+有始有终
+应对的环境
+用户的操作
+return只跳出当前函数，在子函数里return父函数会导致多重循环
+
+#### JS调用函数内部变量和调用子函数有以下两种方法：
+
+1、添加return返回值
+```js
+var a = 5;
+function xxx(){
+    var a = 10;
+    return a;
+}
+var b = xxx();
+```
+
+2、闭包
+```js
+var a = 5;
+function xxx(){
+    var a = 0;
+    var ten = function(){
+        a = 10;
+        return a;
+    }
+    return ten;
+}
+var b = xxx();
+b();
+```
 
 ### 2020.01.01
 
@@ -48,8 +79,8 @@ custom_channels:
 ### 2019.12.24
 
 修改删除网络名称：网络1 网络2 网络3  
-win+r regedit 进入注册表编辑器  
-`win+rregedit 计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles`  
+`win+r regedit`进入注册表编辑器  
+`计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles`  
 删除或修改对应键值即可
 
 ### 2019.12.23
