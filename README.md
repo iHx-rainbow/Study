@@ -2,12 +2,53 @@
 
 ## Love Hx.
 
+### 2020.04.18
+
+#### host文件修改与刷新
+
+1、window环境：
+
+hosts文件位置：C:\windows\system32\drivers\etc
+
+刷新方式：  
+ctrl+r，输入CMD，回车
+
+在命令行执行:  
+`ipconfig /flushdns` //清除DNS缓存内容  
+`ipconfig /displaydns` //显示DNS缓存内容
+
+2、linux环境  
+文件位置：/etc/hosts  
+刷新命令：systemctl restart nscd
+
+### 2020.04.17
+
+#### [水平居中布局与滚动条跳动的千年难题](https://www.zhangxinxu.com/wordpress/2015/01/css-page-scrollbar-toggle-center-no-jumping/)
+
+#### Chrome中开启Overlay Scrollbars隐藏式滚动条功能方式
+
+在chrome://flags/#overlay-scrollbars开启 这个功能开始于2012年 **Chrome 79后失效**
+
+现在如果还想开启的话，可以在快捷方式目标后加 chrome 的运行参数：
+
+`--enable-features=OverlayScrollbar --enable-prefer-compositing-to-lcd-text`
+
+#### 为Chrome多账户添加单独的快捷方式
+
+Chrome的多账户功能非常好用，每个账户都有自己的独立的收藏夹、个人设置等。但是，当你要使用的账户不是默认账户时，必须经过一个切换的操作。本文将简单的介绍一个如何各账户添加快捷方式，从而实现直接登陆到特定的账户中。
+
+原理： Google会在用户数据文件夹下为每一个用户建立一个个人数据文件夹，只要在启动时加入参数 --profile-directory="XXX"（xxx为你的个人数据文件夹名称）即可。
+
+现在的问题是，我们如何知道个人数据文件夹名称呢？答案很简单，通过 chrome://version/ 命令查看即可。
+
+"个人资料"路径一栏既是，这里我用的是默认用户，个人文件夹名称为Default，启动参数为：--profile-directory="Default"。
+
 ### 2020.01.07
 
-跳龙门 群发 群聊互怼
-有始有终
-应对的环境
-用户的操作
+跳龙门 群发 群聊互怼  
+有始有终  
+应对的环境  
+用户的操作  
 return只跳出当前函数，在子函数里return父函数会导致多重循环
 
 #### JS调用函数内部变量和调用子函数有以下两种方法：
