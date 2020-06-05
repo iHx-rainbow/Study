@@ -2,6 +2,40 @@
 
 ## Love Hx.
 
+### 2020.06.05
+
+#### 关闭Windows系统混合睡眠、休眠、快速启动功能
+
+管理员权限启动命令提示符`powercfg /h off`  
+启用则为`powercfg /h on`
+
+#### Windows系统文件修复
+管理员权限启动命令提示符`sfc /scannow`扫描系统文件完整性  
+然后执行`DISM /Online /Cleanup-Image /RestoreHealth`联网还原系统映像文件
+
+### 2020.05.30
+
+#### CCleaner
+
+CCleaner 专业版下载 http://www.piriform.com/ccleaner/download/professional  
+
+CCleaner 便携版下载 http://www.piriform.com/ccleaner/download/portable/downloadfile
+
+1.添加 host 127.0.0.1 license.piriform.com
+
+2.输入 名称 和 许可证密钥
+
+ | 名称 | 许可证密钥 | 
+ | :---: | :---: | 
+ | Any Name | C2YW-6WRJ-5QTZ-IJYE-2ZPC | 
+ | Any Name | C2YW-IAHG-ZU62-INZQ-WZPC | 
+ | Any Name | C2YW-2BAM-ADC2-89RV-YZPC | 
+ | Any Name | C2YW-XFCX-ABIG-GZD4-8ZPC | 
+ | Any Name | C2YW-XK32-GBVV-N3BH-2ZPC | 
+ | Any Name | C2YW-JKW5-KK79-XHR2-4ZPC | 
+ | Any Name | C2YW-QTRT-ZVCG-PQDK-CZPC | 
+ | Any Name | C2YW-GP33-TPIU-BGM8-AZPC | 
+
 ### 2020.05.26
 
 #### 在指定目录下打开cmd
