@@ -2,6 +2,11 @@
 
 ## Love Hx.
 
+### 2020.07.17
+#### 引导修复命令行
+BCDBoot BCDEdit
+https://docs.microsoft.com/zh-cn/windows-hardware/manufacture/desktop/windows-deployment-command-line-tools-reference
+
 ### 2020.06.05
 
 #### 关闭Windows系统混合睡眠、休眠、快速启动功能
