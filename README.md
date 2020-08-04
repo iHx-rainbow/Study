@@ -2,6 +2,15 @@
 
 ## Love Hx.
 
+### 2020.08.04
+#### tinyMediaManager刮削电影信息失败的问题
+HOST问题，导致无法访问  
+[测试链接](https://api.themoviedb.org/3/configuration) 如有正常返回JSON则正常  
+解决方式：  
+HOST 添加 `13.226.238.82 api.themoviedb.org`  
+IP使用 ipaddress 检测 themoviedb.org 的实际地址
+
+
 ### 2020.07.17
 #### 引导修复命令行
 BCDBoot BCDEdit
