@@ -2,6 +2,21 @@
 
 ## Love Hx.
 
+### 2020.08.06
+#### postgre中inet字段设置默认值报错
+`postgre inet ERROR:  syntax error at or near ".0"`
+```sql
+ALTER TABLE "public"."ztc_member_ip_assignment" 
+  ALTER COLUMN "address" SET DEFAULT '127.0.0.1';
+```
+Navicat里用`'127.0.0.1'::inet`
+#### js获取PHP中$this->assign()
+`let rules= {$rules};`  
+注意花括号内不要有空格，如果$param 是字符串，则需要加引号，json和int都可不加
+
+#### jq设置textarea内容
+`$("#txtArea").val('');`
+
 ### 2020.08.04
 #### tinyMediaManager刮削电影信息失败的问题
 HOST问题，导致无法访问  
