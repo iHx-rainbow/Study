@@ -192,6 +192,9 @@ custom_channels:
 修改删除网络名称：网络1 网络2 网络3  
 `win+r regedit`进入注册表编辑器  
 `计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles`  
+多个Microsoft Wi-Fi Direct Virtual Adapter的问题还需要修改  
+`计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network`  
+`计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\{5d624f94-8850-40c3-a3fa-a4fd2080baf3}\vwifimp_wfd`
 删除或修改对应键值即可
 
 ### 2019.12.23
