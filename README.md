@@ -2,6 +2,10 @@
 
 ## Love Hx.
 
+### 2020.08.11
+#### PHP empty、isset、isnull的区别
+https://www.cnblogs.com/zdz8207/p/3789805.html
+
 ### 2020.08.06
 #### postgre中inet字段设置默认值报错
 `postgre inet ERROR:  syntax error at or near ".0"`
