@@ -6,5 +6,10 @@
 		{
 			"path": "..\\zerotier-documentation"
 		}
-	]
+	],
+	"settings": {
+		"files.watcherExclude": {
+			"**/target": true
+		}
+	}
 }
