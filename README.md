@@ -1,6 +1,11 @@
 # iHx
 
 ## Love Hx.
+### 2020.10.23
+#### you-get使用
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple you-get
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade you-get
+you-get -i https://www.youtube.com/watch?v=yKKwyLdhwbU
 
 ### 2020.08.20
 #### JS中==和===的区别
