@@ -1,6 +1,25 @@
 # iHx
 
 ## Love Hx.
+### 2020.10.30
+#### hexo
+hexo init 初始化
+hexo sever 开启服务
+hexo clean 清除静态文件和缓存文件
+hexo generate 生成静态文件
+hexo deploy 部署网站 hexo d -g 部署之前预先生成静态文件
+#### npm换源
+配置文件
+npm config get userconfig
+C:\Users\Admin\.npmrc 
+registry=https://registry.npm.taobao.org
+
+直接命令改
+npm config set registry https://registry.npm.taobao.org
+npm config get registry
+还原
+npm config set registry https://registry.npmjs.org/
+
 ### 2020.10.23
 #### you-get使用
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple you-get
